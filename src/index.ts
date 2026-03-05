@@ -1,4 +1,4 @@
-export * as core from "redgin"
-export * as store from "redgin-store"
-export * as router from "jong-router"
-export * as form from "pao-form"
+export * from "redgin"
+export * from "redgin-store"
+export * from "jong-router"
+export * from "pao-form"
