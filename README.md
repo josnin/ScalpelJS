@@ -12,6 +12,8 @@ No proprietary syntax.
 
 Just precise, predictable updates to the real DOM.
 
+Keywords: Web Components, Custom Elements, Reactive JavaScript, Vanilla JS Framework, Lightweight Frontend Framework, Virtual DOM Alternative
+
 ---
 
 ## Installation

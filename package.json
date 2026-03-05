@@ -1,0 +1,82 @@
+{
+  "name": "scalpeljs",
+  "version": "0.1.0",
+  "description": "ScalpelJS — Surgical DOM updates for Vanilla JavaScript without a Virtual DOM.",
+  "type": "module",
+  "main": "dist/scalpel.min.js",
+  "exports": {
+    ".": "./dist/scalpel.min.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "esbuild src/index.ts --bundle --minify --format=esm --outfile=dist/scalpel.min.js",
+    "check-types": "tsc --noEmit"
+  },
+  "keywords": [
+    "scalpeljs",
+    "vanilla-js",
+    "dom",
+    "reactivity",
+    "micro-framework",
+    "frontend",
+    "no-vdom",
+    "fine-grained",
+    "lightweight",
+    "web-components",
+    "custom-elements",
+    "reactive-js",
+    "ui-library",
+    "surgical-dom",
+    "spa-framework",
+    "frontend-ecosystem",
+    "modern-javascript",
+    "javascript framework",
+    "web components",
+    "custom elements",
+    "vanilla javascript",
+    "reactive javascript",
+    "frontend framework",
+    "lightweight framework",
+    "reactivity",
+    "dom updates",
+    "no virtual dom",
+    "vdom alternative",
+    "micro framework",
+    "frontend ecosystem",
+    "spa framework",
+    "modern javascript",
+    "state management",
+    "client side router",
+    "form validation",
+    "web component framework",
+    "react alternative",
+    "vue alternative",
+    "solidjs alternative",
+    "alpinejs alternative"
+  ],
+  "author": "Josnin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josnin/scalpeljs.git"
+  },
+  "homepage": "https://github.com/josnin/scalpeljs",
+  "bugs": {
+    "url": "https://github.com/josnin/scalpeljs/issues"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0",
+    "vite": "^5.0.0",
+    "typescript": "^5.1.0"
+  },
+  "dependencies": {
+    "create-scalpeljs": "latest",
+    "redgin": "latest",
+    "redgin-store": "latest",
+    "jong-router": "latest",
+    "pao-form": "latest"
+  }
+}
