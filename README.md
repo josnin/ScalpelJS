@@ -1,46 +1,172 @@
-# JSgood
+# 🪓 ScalpelJS
 
-**The Surgical Web Component Framework.**  
-JSgood is a high-performance, lightweight ecosystem designed for developers who want the power of a modern framework with the simplicity of standard Web Components. 
+**Surgical DOM updates with Vanilla JavaScript.**
 
-No Virtual DOM. No heavy abstractions. Just **Good JS**.
+ScalpelJS is a lightweight ecosystem for building modern **Web Component applications** while keeping most of your code in **plain Vanilla JavaScript**.
 
----
+Instead of introducing heavy abstractions, ScalpelJS adds small utilities that solve the exact pain points of working with the DOM.
 
-## The Ecosystem
+No Virtual DOM.  
+No template compilers.  
+No proprietary syntax.
 
-JSgood is a complete, modular stack designed to work together seamlessly:
-
-*   **CLI [create-jsgood](https://www.npmjs.com/package/create-jsgood)**: The official project generator. One command to rule them all.
-*   **Core [redgin](https://www.npmjs.com/package/redgin)**: The reactive Web Component engine.
-*   **Store [redgin-store](https://www.npmjs.com/package/redgin-store)**: Global state management with LocalStorage persistence and surgical logging.
-*   **Router [jong-router](https://www.npmjs.com/package/jong-router)**: Light-speed, client-side navigation.
-*   **Form [pao-form](https://www.npmjs.com/package/pao-form)**: Effortless validation and form handling.
+Just precise, predictable updates to the real DOM.
 
 ---
 
-## Getting Started
+## Installation
 
-You don't need to install libraries one by one. The **JSgood CLI** scaffolds your project, configures Vite, and installs the entire ecosystem (Store, Router, Forms) automatically.
-
-### 1. Scaffold your project
-Run the following command in your terminal:
+Install ScalpelJS:
 
 ```bash
-npx create-jsgood@latest
+npm install scalpeljs
 ```
 
-# Why JSgood?
-* Surgical Reactivity: Directly updates the specific DOM nodes that changed. No expensive "diffing" or Virtual DOM overhead.
-* Native Standards: Built on Custom Elements and ES Modules. Your code is future-proof and browser-native.
-* Memory Safe: Built-in protection against "Zombie Listeners" via the Auto-Unsubscribe pattern in the Store.
-* Developer Choice: Use the CLI for professional projects, or go "Zero-Build" using CDNs for rapid prototyping
-## Help
+Or scaffold a new project using the CLI:
 
-Need help? Open an issue in: [ISSUES](https://github.com/josnin/JSgood/issues)
+```bash
+npx create-scalpeljs@latest
+```
 
+The CLI sets up a ready-to-use development environment with Vite and the ScalpelJS ecosystem.
 
-## Contributing
-Want to improve and add feature? Fork the repo, add your changes and send a pull request.
+---
 
+# What is ScalpelJS?
 
+ScalpelJS is a **curated distribution** built on top of several lightweight libraries that work together seamlessly.
+
+Instead of installing multiple libraries individually, ScalpelJS provides a **single entry point** that integrates them into a cohesive stack for building Web Component applications.
+
+---
+
+# The Ecosystem
+
+ScalpelJS brings together a set of focused tools designed to work naturally with Web Components.
+
+| Package | Purpose |
+|------|------|
+| [`redgin`](https://www.npmjs.com/package/redgin) | Reactive Web Component engine |
+| [`redgin-store`](https://www.npmjs.com/package/redgin-store) | Global state management with persistence |
+| [`jong-router`](https://www.npmjs.com/package/jong-router) | Lightweight client-side router |
+| [`pao-form`](https://www.npmjs.com/package/pao-form) | Declarative form handling and validation |
+
+These libraries remain independently usable, but ScalpelJS provides a **unified developer experience**.
+
+---
+
+# CLI
+
+To quickly start a new ScalpelJS project:
+
+| Package | Purpose |
+|------|------|
+| [`create-scalpeljs`](https://www.npmjs.com/package/create-scalpeljs) | Official project scaffolding tool |
+
+Run:
+
+```bash
+npx create-scalpeljs@latest
+```
+
+---
+
+# Why ScalpelJS?
+
+## Surgical Reactivity
+
+ScalpelJS updates **only the exact DOM nodes that change**.
+
+Instead of diffing Virtual DOM trees, ScalpelJS performs **direct DOM updates** for predictable performance.
+
+---
+
+## Native by Design
+
+ScalpelJS builds directly on browser standards:
+
+- Custom Elements
+- ES Modules
+- Native DOM APIs
+
+No proprietary runtime layer.
+
+---
+
+## Vanilla JavaScript First
+
+ScalpelJS keeps most of your application code **plain JavaScript**.
+
+Rather than replacing the platform, it introduces small helper functions that solve specific problems:
+
+- reactive state updates
+- DOM binding
+- component lifecycle handling
+- state synchronization
+
+---
+
+## Lightweight and Transparent
+
+Without a Virtual DOM or complex runtime, ScalpelJS applications remain:
+
+- lightweight
+- predictable
+- easy to debug
+
+---
+
+# Philosophy
+
+ScalpelJS follows a simple principle:
+
+> Fix the limitations of Vanilla JavaScript without replacing it.
+
+Many modern frameworks introduce entirely new programming models, compilers, and rendering engines.
+
+ScalpelJS takes a different approach.
+
+Instead of abstracting the browser away, ScalpelJS **enhances the platform**.
+
+The core philosophy is **surgical updates**:
+
+- update only what changes
+- avoid expensive diffing
+- keep logic explicit
+- remain close to native browser APIs
+
+The goal is simple:
+
+Write applications that feel like **clean Vanilla JavaScript**, but with the precision and ergonomics of a modern framework.
+
+---
+
+# When to Use ScalpelJS
+
+ScalpelJS is ideal for developers who:
+
+- prefer browser-native technologies
+- want fine-grained control over the DOM
+- dislike heavy framework abstractions
+- want predictable performance
+- enjoy writing Vanilla JavaScript
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+If you'd like to improve ScalpelJS:
+
+1. Fork the repository
+2. Make your changes
+3. Submit a pull request
+
+---
+
+# Support
+
+If you encounter issues or have feature requests, please open an issue:
+
+https://github.com/josnin/scalpeljs/issues
