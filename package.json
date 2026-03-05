@@ -1,6 +1,6 @@
 {
   "name": "scalpeljs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ScalpelJS — Surgical DOM updates for Vanilla JavaScript without a Virtual DOM.",
   "type": "module",
   "main": "dist/scalpel.min.js",
