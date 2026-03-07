@@ -16,21 +16,33 @@ Keywords: Web Components, Custom Elements, Reactive JavaScript, Vanilla JS Frame
 
 ---
 
-## Installation
+## Quick Start
 
-Install ScalpelJS:
+Create a new ScalpelJS project:
 
 ```bash
-npm install scalpeljs
+npx create-scalpeljs@latest 
 ```
 
-Or scaffold a new project using the CLI:
+Then start the development server
 
 ```bash
-npx create-scalpeljs@latest
+cd my-scalpeljs-app
+npm install
+npm run dev
 ```
 
 The CLI sets up a ready-to-use development environment with Vite and the ScalpelJS ecosystem.
+
+---
+
+## Manual Installation
+
+If you prefer to integrate ScalpelJS into an existing project:
+
+```bash
+npm install scalpeljs@latest
+```
 
 ---
 
