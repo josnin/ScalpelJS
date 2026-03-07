@@ -61,7 +61,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/josnin/scalpeljs.git"
+    "url": "git+https://github.com/josnin/scalpeljs.git"
   },
   "homepage": "https://github.com/josnin/scalpeljs",
   "bugs": {
