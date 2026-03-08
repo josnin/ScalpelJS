@@ -1,19 +1,23 @@
 {
   "name": "scalpeljs",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "description": "ScalpelJS — Surgical DOM updates for Vanilla JavaScript without a Virtual DOM.",
   "type": "module",
-  "main": "dist/scalpeljs.min.js",
+  "main": "./dist/scalpeljs.min.js",
+  "module": "./dist/scalpeljs.min.js",
   "exports": {
-    ".": "./dist/scalpeljs.min.js"
+	  ".": {
+		    "types": "./dist/index.d.ts",
+		    "import": "./dist/scalpeljs.min.js"
+		  }
   },
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "esbuild src/index.ts --bundle --minify --format=esm --outfile=dist/scalpeljs.min.js",
-    "check-types": "tsc --noEmit"
+    "build": "tsc --emitDeclarationOnly",
+    "bundle": "esbuild src/index.ts --bundle --minify --format=esm --outfile=dist/scalpeljs.min.js"
   },
   "keywords": [
     "scalpeljs",
